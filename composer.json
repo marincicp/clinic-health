@@ -1,0 +1,10 @@
+{
+  "name": "petar/health-clinic",
+  "autoload": {
+    "psr-4": {
+      "Petar\\HealthClinic\\": "src/",
+      "Core\\": "Core/"
+    }
+  },
+  "require": {}
+}
