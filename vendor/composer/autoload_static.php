@@ -7,9 +7,21 @@ namespace Composer\Autoload;
 class ComposerStaticInit5b0bb5cfd7476c6cc1845fc57290e1c3
 {
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Services\\' => 9,
+        ),
+        'R' => 
+        array (
+            'Repositories\\' => 13,
+        ),
         'P' => 
         array (
             'Petar\\HealthClinic\\' => 19,
+        ),
+        'H' => 
+        array (
+            'Http\\' => 5,
         ),
         'C' => 
         array (
@@ -18,9 +30,21 @@ class ComposerStaticInit5b0bb5cfd7476c6cc1845fc57290e1c3
     );
 
     public static $prefixDirsPsr4 = array (
+        'Services\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Services',
+        ),
+        'Repositories\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Repositories',
+        ),
         'Petar\\HealthClinic\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Http\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Http',
         ),
         'Core\\' => 
         array (

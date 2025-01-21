@@ -6,6 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Services\\' => array($baseDir . '/Services'),
+    'Repositories\\' => array($baseDir . '/Repositories'),
     'Petar\\HealthClinic\\' => array($baseDir . '/src'),
+    'Http\\' => array($baseDir . '/Http'),
     'Core\\' => array($baseDir . '/Core'),
 );

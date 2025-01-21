@@ -3,7 +3,10 @@
   "autoload": {
     "psr-4": {
       "Petar\\HealthClinic\\": "src/",
-      "Core\\": "Core/"
+      "Core\\": "Core/",
+      "Http\\": "Http/",
+      "Services\\": "Services/",
+      "Repositories\\": "Repositories/"
     }
   },
   "require": {}

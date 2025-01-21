@@ -5,7 +5,7 @@ namespace Core;
 return [
    "database" => [
       "host" => "localhost",
-      "port" => "3307",
+      "port" => 3307,
       "dbName" => "clinic",
    ]
 
