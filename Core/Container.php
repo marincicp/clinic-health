@@ -6,21 +6,27 @@ use Exception;
 
 class Container
 {
-
+   private array $intances = [];
    private array $services = [];
 
-   public function bind($name, $value)
+   public function bind(string $name, callable $value): callable
    {
       return $this->services[$name] = $value;
    }
 
-   public function resolve(string $className)
+   public function resolve(string $className): object
    {
       try {
 
+         if (array_key_exists($className, $this->intances)) {
+            return $this->intances[$className];
+         }
+
 
          if (array_key_exists($className, $this->services)) {
-            return $this->services["className"]();
+            $this->intances[$className] =  $this->services[$className]();
+
+            return $this->intances[$className];
          }
 
 
