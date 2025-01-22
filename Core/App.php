@@ -6,7 +6,7 @@ namespace Core;
 class App
 {
    private Router $router;
-   private Container $container;
+   private object $container;
 
    public function __construct()
    {
@@ -19,5 +19,10 @@ class App
    public function getRouter()
    {
       return $this->router;
+   }
+
+   public function getContainer()
+   {
+      return $this->container;
    }
 }

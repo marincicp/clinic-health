@@ -3,7 +3,7 @@
 namespace Core;
 
 
-require "./Core/functions.php";
+require_once "./Core/functions.php";
 
 class Router
 {
